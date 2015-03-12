@@ -10,6 +10,8 @@ th {
 
 h1.heading {
 	text-align: center;
+	font-family: "Lora", serif;
+	padding: 5px 15px 0 15px;
 }
 
 #error-explanation {
@@ -37,15 +39,24 @@ h1.heading {
 .newUserContent {
 	background-color: white;
 	border: 2px solid black;
-	width: 1000px;
+	width: 500px;
 	margin: 0 auto;
-	padding: 15px;
-	top: 20%;
+	padding-bottom: 10px;
+	top: 17%;
 	position: inherit;
 	opacity: .95;
 }
 
+// .newUserContent input {
+// 	border: 1px solid gray;
+// }
+
 .newUserForm {
-	line-height: 1.5;
+	line-height: 2;
+	text-align: center;
+}
+
+#newSessionPath {
+	font-size: 12px;
 	text-align: center;
 }
