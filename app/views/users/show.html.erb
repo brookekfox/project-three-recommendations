@@ -1,7 +1,11 @@
-<h1>Hi <%= @user.first_name.capitalize %>!</h1>
+<div class="container">
+	<%= render 'nav' %>
 
-<%= link_to 'Recommendations', recommendations_path %>
+	<div class="newUserContent">
+	<h1>Hi <%= @user.first_name.capitalize %>!</h1>
 
-<div>
-	<%#= link_to 'Private Recommendations', recommendations_path(user_id: @user.id) %>
+	<%= link_to 'Recommendations', recommendations_path %>
+
+
+	</div>
 </div>

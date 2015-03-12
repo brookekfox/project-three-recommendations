@@ -1,20 +1,23 @@
-<div style="border:2px solid black;border-radius:10px;padding:1%;width:95%;margin:0 auto">
-	<div style="display:inline-block">
+<div class="navbar">
+	<div class="navbarLogo">
+		<%= link_to 'soci.al ', recommendations_path %>
+	</div>
+	<div class="navBarButton">
 		<%= link_to 'Dashboard', recommendations_path %>
 	</div>
-	<div style="display:inline-block">
+	<div class="navBarButton">
 		<%= link_to 'My public page', public_recommendations_path(session['user_id']) %>
 	</div>
-	<div style="display:inline-block">
+	<div class="navBarButton">
 		<%= link_to 'Make a new recommendation', new_recommendation_path(session['user_id']) %>
 	</div>
-	<div style="display:inline-block">
+	<div class="navBarButton">
 		<%= link_to 'Edit profile', edit_user_path(session['user_id']) %>
 	</div>
-	<div style="display:inline-block">
-		<%= link_to 'Log out', sessions_path, method: :delete %>
+	<div class="navBarButton">
+		Currently logged in as <%= User.find(session['user_id']).first_name.capitalize %>
 	</div>
-	<div style="display:inline-block">
-		Hi, <%= User.find(session['user_id']).first_name.capitalize %>
+	<div class="navBarButton logout">
+		<%= link_to 'Log out', sessions_path, method: :delete %>
 	</div>
 </div>
