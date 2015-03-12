@@ -6,6 +6,7 @@
 .container{ 
 	text-align: center;
 	background: url(image-path("bg-1.jpg"));
+	opacity: .84;
 	background-repeat: no-repeat;
 	height: 1000px;
 	width: auto;
@@ -31,6 +32,7 @@
 	font-size: 19px;
 	color: white;
 }
+
 section.content {
 	border-top: 10px solid white;
 	background-color: white;
@@ -59,6 +61,7 @@ input[type=text], [type=password] {
 	font-size: 20px;
 	font-family: 'Lora', italic;
 	color: black;
+	text-align: center;
 }
 
 
@@ -75,7 +78,7 @@ input:focus {
 }
 
 input:hover {
-	color: red;
+	color: black;
 }
 
 a {
@@ -85,5 +88,5 @@ a {
 }
 
 a:hover {
-	color: red;
+	color: black;
 }

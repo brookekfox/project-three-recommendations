@@ -7,3 +7,45 @@ html {
 th {
   text-align: left;
 }
+
+h1.heading {
+	text-align: center;
+}
+
+#error-explanation {
+	text-align: center;
+	color: red;
+	padding-bottom: 50px;
+}
+
+.newUserContainer {
+	background: url(image-path("bg-1.jpg"));
+	opacity: .85;
+	height: 1000px;
+	width: auto;
+	position: relative;
+}
+
+.newUserContainer #appName {
+	top: 15%;
+	text-align: center;
+	font-size: 70px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+.newUserContent {
+	background-color: white;
+	border: 2px solid black;
+	width: 1000px;
+	margin: 0 auto;
+	padding: 15px;
+	top: 20%;
+	position: inherit;
+	opacity: .95;
+}
+
+.newUserForm {
+	line-height: 1.5;
+	text-align: center;
+}
