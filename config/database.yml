@@ -56,4 +56,3 @@ production:
   database: project-three_production
   host: localhost
   encoding: unicode
-
