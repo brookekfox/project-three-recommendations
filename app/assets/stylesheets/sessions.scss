@@ -1,3 +1,89 @@
 // Place all the styles related to the sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.container{ 
+	text-align: center;
+	background: url(image-path("bg-1.jpg"));
+	background-repeat: no-repeat;
+	height: 1000px;
+	width: auto;
+	position: relative;
+}
+
+#appName {
+	position: inherit;
+	width: 80%;
+	top: 40%;
+	margin: 0 auto;
+	font-size: 154px;
+	font-family: 'Lora', sans-serif;
+	color: white;
+}
+
+#underTitle {
+	position: inherit;
+	width: 80%;
+	top: 37%;
+	margin: 0 auto;
+	font-family: 'Lora', italic;
+	font-size: 19px;
+	color: white;
+}
+section.content {
+	border-top: 10px solid white;
+	background-color: white;
+	height: auto;
+	width: auto;
+	background-repeat: no-repeat;
+}
+
+.sign-in {
+	padding: 15px;
+	background: white;
+	border: 2px solid grey;
+	background-repeat: repeat;
+	width: 1000px;
+	text-align: center;
+	border: 2px solid white;
+	margin: 0 auto;
+}
+
+input[type=text], [type=password] {	
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid gray;
+	width: 375px;
+	height: 20px;
+	font-size: 20px;
+	font-family: 'Lora', italic;
+	color: black;
+}
+
+
+input[type=submit] {
+	background: transparent;
+	font-size: 20px;
+	font-family: 'Lora', italic;
+	border: none;
+	color: gray;
+}
+
+input:focus {
+	outline: none;
+}
+
+input:hover {
+	color: red;
+}
+
+a {
+	color: gray;
+	text-decoration: none;
+	text-family: 'Lora', serif;
+}
+
+a:hover {
+	color: red;
+}
