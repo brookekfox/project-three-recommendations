@@ -1,0 +1,3 @@
+RecommendationMailer#new_recommendation
+
+Hi, find me in app/views/recommendation_mailer/new_recommendation
