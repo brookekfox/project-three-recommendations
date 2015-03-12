@@ -1,3 +1,13 @@
 .tags-container, .tag {
   display: inline-block;
 }
+
+.recContent {
+	margin: 75px auto;
+	width: 95%;
+	border: 4px double black;
+	padding: 2%;
+	border-radius: 10px;
+	background: url(image-path('light_wool.png'));
+
+}

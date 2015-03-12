@@ -2,7 +2,7 @@
 	<div id="appName"><strong>soci.al</strong></div>
 	<div class="newUserContent">	
 		<div class="row">
-			<div class="col-md-12 text-center"><h1 class="heading">Sign up!</h1></div>
+			<div class="col-md-12 text-center"><h1 class="heading">User Information</h1></div>
 		</div>
 
 		<% if @user.errors.any? %>
@@ -16,18 +16,18 @@
 
 		<div class="newUserForm">
 			<%= form_for @user do |f| %>
-				<%= f.text_field :first_name,                placeholder: 'FIRST NAME' %>
+				<%= f.text_field :first_name,                placeholder: 'FIRST NAME' %><br />
 				<%= f.text_field :last_name,                 placeholder: 'LAST NAME (optional)' %><br>
 				<%= f.text_field :email,                     placeholder: 'EMAIL' %><br>
 				<%= f.password_field :password,              placeholder: 'PASSWORD' %><br>
 				<%= f.password_field :password_confirmation, placeholder: 'CONFIRM PASSWORD' %><br>
-				<%= f.text_field :twitter,					         placeholder: 'TWITTER' %> and/or <br>
-				<%= f.text_field :instagram,				         placeholder: 'INSTAGRAM' %><br>
-
+				<%= f.text_field :twitter,					 placeholder: 'TWITTER' %><br /> and/or <br>
+				<%= f.text_field :instagram,				 placeholder: 'INSTAGRAM' %><br>
 				<%= f.submit %>
 			<% end %>
-
-			<%= link_to 'Already a User? Sign In!', new_sessions_path %>
+		</div>
+		<div id="newSessionPath">
+			<%= link_to 'Already a User? Click here to Log In!', new_sessions_path %>
 		</div>
 	</div>
 </div>

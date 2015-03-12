@@ -8,16 +8,6 @@ th {
   text-align: left;
 }
 
-h1.heading {
-	text-align: center;
-}
-
-#error-explanation {
-	text-align: center;
-	color: red;
-	padding-bottom: 50px;
-}
-
 .newUserContainer {
 	background: url(image-path("bg-1.jpg"));
 	opacity: .85;
@@ -27,25 +17,45 @@ h1.heading {
 }
 
 .newUserContainer #appName {
-	top: 15%;
+	top: 8%;
 	text-align: center;
-	font-size: 70px;
+	font-size: 170px;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+h1.heading {
+	text-align: center;
+	font-family: "Lora", serif;
+	padding: 5px 15px 0 15px;
+}
+
+#error-explanation {
+	text-align: center;
+	color: red;
+	padding-bottom: 50px;
+}
 
 .newUserContent {
-	background-color: white;
+	background: url(image-path('light_wool.png'));
 	border: 2px solid black;
-	width: 1000px;
+	width: 500px;
 	margin: 0 auto;
-	padding: 15px;
-	top: 20%;
+	padding-bottom: 10px;
+	top: 9%;
 	position: inherit;
 	opacity: .95;
 }
 
+// .newUserContent input {
+// 	border: 1px solid gray;
+// }
+
 .newUserForm {
-	line-height: 1.5;
+	line-height: 2;
+	text-align: center;
+}
+
+#newSessionPath {
+	font-size: 12px;
 	text-align: center;
 }
