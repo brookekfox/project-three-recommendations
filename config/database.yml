@@ -45,8 +45,14 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+#production:
+#  <<: *default
+#  database: project-three_production
+#  username: project-three
+#  password: <%= ENV['PROJECT-THREE_DATABASE_PASSWORD'] %>
+
 production:
-  <<: *default
+  adapter: postgresql
   database: project-three_production
-  username: project-three
-  password: <%= ENV['PROJECT-THREE_DATABASE_PASSWORD'] %>
+  host: localhost
+  encoding: unicode
