@@ -13,22 +13,22 @@
 }
 
 #appName {
-	display: inline-block;
+	position: inherit;
 	top: 32%;
 	margin: 0 auto;
-	font-size: 180px;
+	font-size: 160px;
 	font-family: "Lora", serif;
 	color: white;
 }
 
 #underTitle {
-	display: inline-block;
+	position: inherit;
 	width: 80%;
-	top: 32%;
+	top: 281px;
 	margin: 0 auto;
 	font-family: "Lora", serif;
 	font-style: italic;
-	font-size: 120px;
+	font-size: 18px;
 	color: white;
 }
 

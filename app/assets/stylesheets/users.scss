@@ -34,7 +34,8 @@ h1.heading {
 
 .newUserContent {
 	background: url(image-path('light_wool.png'));
-	border: 2px solid black;
+	border: 4px double black;
+	border-radius: 10px;
 	width: 500px;
 	margin: 0 auto;	
 	padding-bottom: 10px;

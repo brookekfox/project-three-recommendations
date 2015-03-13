@@ -50,7 +50,8 @@ h1,h2,h3 {
 .newRec, .myRec {
 	background-color: white;
 	font-family: "Lora";
-	border: 4px double black;
+	border-radius: 10px;
+	box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
 	margin: 75px auto;
 	width: 80%;
 	padding: 1%;
@@ -59,13 +60,10 @@ h1,h2,h3 {
 	text-align: center;
 }
 
-.publicContent {
+.publicContent, .tags-container, .tag {
 	display: inline-block;
 }
 
-.tags-container, .tag {
-  display: inline-block;
-}
 
 .containerRec {
 	background: url(image-path('bg-2.jpg'));
@@ -141,6 +139,11 @@ h1,h2,h3 {
 	font-size: 16px;
     text-align: center;
     padding: 4px 5px 4px 5px;
+}
+
+#tableSent td {
+	width: 300px;
+
 }
 
 
