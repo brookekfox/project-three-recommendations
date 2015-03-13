@@ -1,12 +1,7 @@
-h1,h2,h3 {
-  font-family: 'Sigmar One', cursive;
-}
-html {
-  font-family: 'Lora', serif;
-}
-th {
-  text-align: left;
-}
+// h1,h2,h3 {
+//   font-family: 'Sigmar One', cursive;
+// }
+
 
 .newUserContainer {
 	background: url(image-path("bg-1.jpg"));
@@ -14,13 +9,15 @@ th {
 	height: 1000px;
 	width: auto;
 	position: relative;
+	text-align: center;
 }
 
-.newUserContainer #appName {
-	top: 8%;
+#appName2 {
+	color: white;
 	text-align: center;
+	display: block;
 	font-size: 170px;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	// text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 h1.heading {
@@ -39,10 +36,8 @@ h1.heading {
 	background: url(image-path('light_wool.png'));
 	border: 2px solid black;
 	width: 500px;
-	margin: 0 auto;
+	margin: 0 auto;	
 	padding-bottom: 10px;
-	top: 9%;
-	position: inherit;
 	opacity: .95;
 }
 

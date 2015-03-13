@@ -1,17 +1,6 @@
-.tags-container, .tag {
-  display: inline-block;
+h1,h2,h3 {
+  font-family: "Lora", serif;
 }
-
-.recContent {
-	margin: 75px auto;
-	width: 95%;
-	border: 4px double black;
-	padding: 2%;
-	border-radius: 10px;
-	background: url(image-path('light_wool.png'));
-
-}
-
 
 .navbar1 {
 	background-color: black;
@@ -27,13 +16,21 @@
 
 .navbarLogo {
 	float: left;
+	padding-bottom: 2px;
 	display: inline-block;
 	color: white;
 	font-size: 18px;
+	font-style: normal;
 	text-transform: none;
 }
+
+.navbarLogo a {
+	color: white;
+	font-size: 24px;
+	padding-bottom: 5px;
+}
 .navBarButton {
-	display: inline-block;
+	display: inline;
 	background: transparent;
 	color: white;
 	padding: 0px 5px;
@@ -43,9 +40,108 @@
 .navBarButton a {
 	color: white;
 }
-.navBarButton:hover, a:hover {
+.navbarLogo a:hover, .navBarButton a:hover {
 	color: gray;
 }
 .navBarButton.logout {
 	border-right: 0;
 }
+
+.newRec, .myRec {
+	background-color: white;
+	font-family: "Lora";
+	border: 4px double black;
+	margin: 75px auto;
+	width: 80%;
+	padding: 1%;
+	border-radius: 10px;
+	background: url(image-path('light_wool.png'));
+	text-align: center;
+}
+
+.publicContent {
+	display: inline-block;
+}
+
+.tags-container, .tag {
+  display: inline-block;
+}
+
+.containerRec {
+	background: url(image-path('bg-2.jpg'));
+	text-align: center;
+	background-repeat: no-repeat;
+	height: 1000px;
+	width: auto;
+	position: relative;
+	opacity: .80;
+}
+
+.dashboard {
+	margin: 5px auto;
+	width: 90%;
+	padding: 15px;
+	// border: 4px double black;
+	// border-radius: 10px;
+}
+
+.dashboard h1 {
+	margin-bottom: 18px;
+	margin-top: 5px;
+	font-size: 48px;
+	text-transform: uppercase;
+	background: url(image-path('light_wool.png'));
+	width: auto;
+	border-radius: 10px;
+	box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+
+}
+
+.recContent h1 {
+	font-size: 60px;
+	color: black;
+	margin-top: 0px;
+}
+
+.recReceived {
+	box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+	border-radius: 10px;
+	padding: 2%;
+	background: url(image-path('light_wool.png'));
+}
+
+.recSent {
+	box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+	border-radius: 10px;
+	margin-top: 18px;
+	padding: 2%;
+	background: url(image-path('light_wool.png'));
+}
+
+#tableReceived {
+	width: 100%;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+#tableReceived th {
+	font-size: 16px;
+    text-align: left;
+    padding: 4px 5px 4px 5px;
+}
+
+#tableSent {
+	width: 100%;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+
+#tableSent th {
+	font-size: 16px;
+    text-align: center;
+    padding: 4px 5px 4px 5px;
+}
+
+
+

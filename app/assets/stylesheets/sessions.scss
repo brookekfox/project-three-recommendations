@@ -13,22 +13,22 @@
 }
 
 #appName {
-	position: inherit;
-	width: 80%;
-	top: 35%;
+	display: inline-block;
+	top: 32%;
 	margin: 0 auto;
-	font-size: 170px;
-	font-family: 'Lora', sans-serif;
+	font-size: 180px;
+	font-family: "Lora", serif;
 	color: white;
 }
 
 #underTitle {
-	position: inherit;
+	display: inline-block;
 	width: 80%;
 	top: 32%;
 	margin: 0 auto;
-	font-family: 'Lora', italic;
-	font-size: 19px;
+	font-family: "Lora", serif;
+	font-style: italic;
+	font-size: 120px;
 	color: white;
 }
 
@@ -58,7 +58,7 @@ input[type=text], [type=password] {
 	width: 375px;
 	height: 20px;
 	font-size: 20px;
-	font-family: 'Lora', italic;
+	font-family: "Lora", serif;
 	color: black;
 	text-align: center;
 }
@@ -67,7 +67,7 @@ input[type=text], [type=password] {
 input[type=submit] {
 	background: transparent;
 	font-size: 20px;
-	font-family: 'Lora', italic;
+	font-family: "Lora", serif;
 	border: none;
 	color: gray;
 }
@@ -83,7 +83,8 @@ input:hover {
 a {
 	color: gray;
 	text-decoration: none;
-	text-family: 'Lora', serif;
+	font-family: "Lora", serif;
+	font-style:	italic;
 }
 
 a:hover {

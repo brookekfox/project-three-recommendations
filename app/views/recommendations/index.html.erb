@@ -1,12 +1,13 @@
-<%= render 'navy' %>
+<div class="containerRec">
+	<%= render 'navy' %>
 
-<div style="margin:0 auto; width:95%; border:4px double black; padding:2%; border-radius:10px">
-	<h1>Recommendations!</h1>
+	<div class="dashboard">
+		<h1>Recommendation Dashboard</h1>
 
-	<div style="border: 1px solid black;border-radius:10px;padding:2%">
-		<h2>RECOMMENDATIONS RECEIVED</h2>
-		<table>
-			<thead>
+		<div class="recReceived">
+			<h2>Recommendations Received</h2>
+			<table id="tableReceived">
+				<thead>
 			<tr>
 				<th>FROM<%#= link_to 'FROM', :sort => 'user_id' %></th>
 				<th>SOCIAL MEDIA<%#= link_to 'SOCIAL MEDIA', :sort => 'social_media' %></th>
@@ -19,7 +20,6 @@
 				<th colspan="8"></th>
 			</tr>
 			</thead>
-
 			<tbody>
 			<% @recommendations.where(is_private:true, user_id_to:session['user_id'])
 						 .each do |rec| %>
@@ -107,11 +107,10 @@
 			</tbody>
 		</table>
 	</div>
-
-	<div style="border: 1px solid black;border-radius:10px;padding:2%">
-		<h2 class="actions-for-current-user">RECOMMENDATIONS SENT</h2>
-		<table>
-			<thead>
+			<div class="recSent">
+			<h2 class="actions-for-current-user">Recommendations Sent</h2>
+			<table id="tableSent">
+				<thead>
 			<tr>
 				<th>TO<%#= link_to 'TO', :sort => 'user_id_to' %></th>
 				<th>SOCIAL MEDIA<%#= link_to 'SOCIAL MEDIA', :sort => 'social_media' %></th>
@@ -124,7 +123,6 @@
 				<th colspan="6"></th>
 			</tr>
 			</thead>
-
 			<tbody>
 			<% @recommendations.where(is_private:true, user_id:session['user_id'])
 						 .where.not(user_id_to:nil)
@@ -215,5 +213,4 @@
 			</tbody>
 		</table>
 	</div>
-
 </div>
