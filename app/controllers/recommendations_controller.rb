@@ -5,9 +5,11 @@ class RecommendationsController < ApplicationController
 		@recommendations = Recommendation.all.order('created_at DESC')
 
 		@base_url            = 'https://api.instagram.com/v1/users/'
-		@search_access_token = 'search?access_token=' + ENV['INSTAGRAM_API_KEY'] + '&q='
+		@search_access_token = 'search?access_token='
+		@api_key             = ENV['INSTAGRAM_API_KEY']
+		@query               = '&q='
 		#@query
-		@photo_access_token  = '/media/recent?access_token=' + ENV['INSTAGRAM_API_KEY']
+		@photo_access_token  = '/media/recent?access_token='
 		@count               = '&count=1'
 	end
 
@@ -17,9 +19,11 @@ class RecommendationsController < ApplicationController
 		@user = User.find(params[:id])
 
 		@base_url            = 'https://api.instagram.com/v1/users/'
-		@search_access_token = 'search?access_token=' + ENV['INSTAGRAM_API_KEY'] + '&q='
+		@search_access_token = 'search?access_token='
+		@api_key             = ENV['INSTAGRAM_API_KEY']
+		@query               = '&q='
 		#@query
-		@photo_access_token  = '/media/recent?access_token=' + ENV['INSTAGRAM_API_KEY']
+		@photo_access_token  = '/media/recent?access_token='
 		@count               = '&count=1'
 	end
 
@@ -44,9 +48,11 @@ class RecommendationsController < ApplicationController
 		@recommendation = Recommendation.find(params[:id])
 
 		@base_url            = 'https://api.instagram.com/v1/users/'
-		@search_access_token = 'search?access_token=' + ENV['INSTAGRAM_API_KEY'] + '&q='
+		@search_access_token = 'search?access_token='
+		@api_key             = ENV['INSTAGRAM_API_KEY']
+		@query               = '&q='
 		#@query
-		@photo_access_token  = '/media/recent?access_token=' + ENV['INSTAGRAM_API_KEY']
+		@photo_access_token  = '/media/recent?access_token='
 		@count               = '&count=1'
   end
 
