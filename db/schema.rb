@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150313225727) do
+ActiveRecord::Schema.define(version: 20150312210557) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "recommendations", force: :cascade do |t|
     t.string   "social_media"
+    t.boolean  "is_public"
     t.string   "handle"
     t.integer  "user_id_to"
     t.integer  "user_id"
@@ -49,7 +50,6 @@ ActiveRecord::Schema.define(version: 20150313225727) do
     t.string   "first_name"
     t.string   "last_name"
     t.boolean  "is_current_user"
-    t.boolean  "is_private"
   end
 
 end
