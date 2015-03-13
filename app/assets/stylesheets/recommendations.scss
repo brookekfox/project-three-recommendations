@@ -1,17 +1,27 @@
+h1,h2,h3 {
+  font-family: "Lora", serif;
+}
+
+
 .tags-container, .tag {
   display: inline-block;
 }
 
-.recContent {
-	margin: 75px auto;
-	width: 95%;
-	border: 4px double black;
-	padding: 2%;
-	border-radius: 10px;
+.dashboard {
+	margin: 40px auto;
+	width: 90%;
+	padding: 15px;
+	// border: 4px double black;
+	// border-radius: 10px;
 	background: url(image-path('light_wool.png'));
-
 }
 
+.recContent h1 {
+	font-size: 60px;
+	color: black;
+	margin-top: 0px;
+
+}
 
 .navbar1 {
 	background-color: black;
@@ -32,6 +42,11 @@
 	font-size: 18px;
 	text-transform: none;
 }
+
+.navbarLogo a {
+	color: white;
+	font-size: 24px;
+}
 .navBarButton {
 	display: inline-block;
 	background: transparent;
@@ -43,9 +58,30 @@
 .navBarButton a {
 	color: white;
 }
-.navBarButton:hover, a:hover {
+.navbarLogo a:hover, .navBarButton a:hover {
 	color: gray;
 }
 .navBarButton.logout {
 	border-right: 0;
+}
+
+.newRec, .myRec {
+	background-color: white;
+	font-family: "Lora";
+	border: 4px double black;
+	margin: 75px auto;
+	width: 80%;
+	padding: 1%;
+	border-radius: 10px;
+	background: url(image-path('light_wool.png'));
+	text-align: center;
+}
+
+tr,td,th {
+	text-align: center;
+
+}
+
+.publicContent {
+	display: inline-block;
 }

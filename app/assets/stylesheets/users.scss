@@ -1,12 +1,7 @@
-h1,h2,h3 {
-  font-family: 'Sigmar One', cursive;
-}
-html {
-  font-family: 'Lora', serif;
-}
-th {
-  text-align: left;
-}
+// h1,h2,h3 {
+//   font-family: 'Sigmar One', cursive;
+// }
+
 
 .newUserContainer {
 	background: url(image-path("bg-1.jpg"));
@@ -39,7 +34,7 @@ h1.heading {
 	background: url(image-path('light_wool.png'));
 	border: 2px solid black;
 	width: 500px;
-	margin: 0 auto;
+	margin: 0 auto;	
 	padding-bottom: 10px;
 	top: 9%;
 	position: inherit;

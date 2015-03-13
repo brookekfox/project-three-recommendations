@@ -14,11 +14,10 @@
 
 #appName {
 	position: inherit;
-	width: 80%;
 	top: 35%;
 	margin: 0 auto;
 	font-size: 170px;
-	font-family: 'Lora', sans-serif;
+	font-family: "Lora", sans-serif;
 	color: white;
 }
 
@@ -27,7 +26,7 @@
 	width: 80%;
 	top: 32%;
 	margin: 0 auto;
-	font-family: 'Lora', italic;
+	font-family: "Lora", italic;
 	font-size: 19px;
 	color: white;
 }
@@ -67,7 +66,7 @@ input[type=text], [type=password] {
 input[type=submit] {
 	background: transparent;
 	font-size: 20px;
-	font-family: 'Lora', italic;
+	font-family: "Lora", italic;
 	border: none;
 	color: gray;
 }
@@ -83,7 +82,7 @@ input:hover {
 a {
 	color: gray;
 	text-decoration: none;
-	text-family: 'Lora', serif;
+	text-family: "Lora", serif;
 }
 
 a:hover {

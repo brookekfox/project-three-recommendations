@@ -2,21 +2,11 @@
 	<%#= link_to 'My user page', recommendations_path %>
 	<%= render 'navy' %>
 
-	<div style="margin:0 auto; width:60%; border:4px double black; padding:2%; border-radius:10px">
+	<div class="myRec">
 		<h1><%= @user.first_name.capitalize %>'s Recommendations!</h1>
 
-		<div>
+		<div class="publicContent">
 			<table>
-				<thead>
-				<tr>
-					<!--<th>SOCIAL MEDIA</th>-->
-					<!--<th>HANDLE</th>-->
-					<!--<th>TAGS</th>-->
-					<!--<th>ACTIONS</th>-->
-					<!--<th colspan="4"></th>-->
-				</tr>
-				</thead>
-
 				<tbody>
 				<% @recommendations.each do |rec| %>
 					<tr>
