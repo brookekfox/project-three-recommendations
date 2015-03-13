@@ -14,7 +14,6 @@ class RecommendationsController < ApplicationController
 	end
 
 	def public
-		# @recommendations = Recommendation.all
 		@recommendations = Recommendation.all.where(user_id:params[:id]).order('social_media DESC, handle ASC')
 		@user = User.find(params[:id])
 
