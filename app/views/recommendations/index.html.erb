@@ -206,8 +206,8 @@
 							</div>
 					</td>
 					<!--actions-->
-					<td><%= link_to 'View', rec %>
-						<%= link_to 'Delete', rec, method: :delete, data: {confirm: 'Are you sure?'} %>
+					<td><%= link_to 'View | ', rec %>
+						<%= link_to 'Delete | ', rec, method: :delete, data: {confirm: 'Are you sure?'} %>
 						<%= link_to 'Edit', edit_recommendation_path(rec) %></td>
 				</tr>
 			<% end %>

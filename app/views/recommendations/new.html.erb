@@ -29,11 +29,10 @@
 					@<%= f.text_field :handle %><br><br>
 
 				Private? <%= f.check_box :is_private, class: 'private_checkbox' %><br>
-				<div>
+				<div class="private_recommendation">
 					To whom do you want to send it?<br>
 					<%= f.collection_select :user_id_to, User.where.not(id:session['user_id']).order('email ASC'), :id, :email, include_blank: '' %>
 				</div>
-
 				<br>
 				Add some tags!
 				<table class="recTable">
