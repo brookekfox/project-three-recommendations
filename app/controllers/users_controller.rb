@@ -15,7 +15,7 @@ class UsersController < ApplicationController
 			UserMailer.welcome(@user.id).deliver
 			redirect_to recommendations_path
 		else
-			render 'new'
+			redirect_to new_user_path
 		end
 	end
 
