@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 20150310222848) do
 
   create_table "recommendations", force: :cascade do |t|
     t.string   "social_media"
-    t.boolean  "is_public"
     t.string   "handle"
     t.integer  "user_id_to"
     t.integer  "user_id"
