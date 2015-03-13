@@ -21,8 +21,7 @@
 			</tr>
 			</thead>
 			<tbody>
-			<% @recommendations.where(is_private:true, user_id_to:session['user_id'])
-						 .each do |rec| %>
+			<% @recommendations.where(is_private:true, user_id_to:session['user_id']).each do |rec| %>
 				<tr>
 					<!--from-->
 					<td>
