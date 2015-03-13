@@ -12,7 +12,7 @@ class UsersController < ApplicationController
 		if @user.save
 			session['user_id'] = @user.id.to_s
 			# redirect_to user_path(session['user_id'])
-			UserMailer.welcome(@user.id).deliver
+			# UserMailer.welcome(@user.id).deliver
 			redirect_to recommendations_path
 		else
 			redirect_to new_user_path

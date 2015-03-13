@@ -34,7 +34,7 @@ class RecommendationsController < ApplicationController
 	def create
 		@recommendation = Recommendation.create(recommendation_params)
 		if (@recommendation.save && @recommendation.is_private == true) || (@recommendation.save && @recommendation.is_private == false)
-			RecommendationMailer.new_recommendation(@recommendation.user_id_to,@recommendation.user.id).deliver
+			# RecommendationMailer.new_recommendation(@recommendation.user_id_to,@recommendation.user.id).deliver
 			redirect_to recommendations_path(session['user_id'])
 		# elsif @recommendation.save && @recommendation.is_private == false
 		# 	redirect_to recommendations_path(session['user_id'])
