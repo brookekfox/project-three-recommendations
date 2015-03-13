@@ -14,39 +14,3 @@
  *= require_self
  */
 
-.navbar {
-	background-color: black;
-	opacity: .8;
-	/*border: 2px solid black;
-	border-radius: 10px;*/
-	padding: 1%;
-	color: black;
-	margin: 0 auto;
-	height: 10px;
-	font-size: 16px;
-}
-
-.navbarLogo {
-	float: left;
-	display: inline-block;
-	color: white;
-	font-size: 18px;
-	text-transform: none;
-}
-.navBarButton {
-	display: inline-block;
-	background: transparent;
-	color: white;
-	padding: 0px 5px;
-	border-right: 1px solid white;
-}
-
-.navBarButton a {
-	color: white;
-}
-.navBarButton:hover, a:hover {
-	color: gray;
-}
-.navBarButton.logout {
-	border-right: 0;
-}
