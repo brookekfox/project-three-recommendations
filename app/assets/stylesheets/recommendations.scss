@@ -2,27 +2,6 @@ h1,h2,h3 {
   font-family: "Lora", serif;
 }
 
-
-.tags-container, .tag {
-  display: inline-block;
-}
-
-.dashboard {
-	margin: 40px auto;
-	width: 90%;
-	padding: 15px;
-	// border: 4px double black;
-	// border-radius: 10px;
-	background: url(image-path('light_wool.png'));
-}
-
-.recContent h1 {
-	font-size: 60px;
-	color: black;
-	margin-top: 0px;
-
-}
-
 .navbar1 {
 	background-color: black;
 	opacity: .8;
@@ -37,18 +16,21 @@ h1,h2,h3 {
 
 .navbarLogo {
 	float: left;
+	padding-bottom: 2px;
 	display: inline-block;
 	color: white;
 	font-size: 18px;
+	font-style: normal;
 	text-transform: none;
 }
 
 .navbarLogo a {
 	color: white;
 	font-size: 24px;
+	padding-bottom: 5px;
 }
 .navBarButton {
-	display: inline-block;
+	display: inline;
 	background: transparent;
 	color: white;
 	padding: 0px 5px;
@@ -77,11 +59,89 @@ h1,h2,h3 {
 	text-align: center;
 }
 
-tr,td,th {
-	text-align: center;
-
-}
-
 .publicContent {
 	display: inline-block;
 }
+
+.tags-container, .tag {
+  display: inline-block;
+}
+
+.containerRec {
+	background: url(image-path('bg-2.jpg'));
+	text-align: center;
+	background-repeat: no-repeat;
+	height: 1000px;
+	width: auto;
+	position: relative;
+	opacity: .80;
+}
+
+.dashboard {
+	margin: 5px auto;
+	width: 90%;
+	padding: 15px;
+	// border: 4px double black;
+	// border-radius: 10px;
+}
+
+.dashboard h1 {
+	margin-bottom: 18px;
+	margin-top: 5px;
+	font-size: 48px;
+	text-transform: uppercase;
+	background: url(image-path('light_wool.png'));
+	width: auto;
+	border-radius: 10px;
+	box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+
+}
+
+.recContent h1 {
+	font-size: 60px;
+	color: black;
+	margin-top: 0px;
+}
+
+.recReceived {
+	box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+	border-radius: 10px;
+	padding: 2%;
+	background: url(image-path('light_wool.png'));
+}
+
+.recSent {
+	box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+	border-radius: 10px;
+	margin-top: 18px;
+	padding: 2%;
+	background: url(image-path('light_wool.png'));
+}
+
+#tableReceived {
+	width: 100%;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+#tableReceived th {
+	font-size: 16px;
+    text-align: left;
+    padding: 4px 5px 4px 5px;
+}
+
+#tableSent {
+	width: 100%;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+
+
+#tableSent th {
+	font-size: 16px;
+    text-align: center;
+    padding: 4px 5px 4px 5px;
+}
+
+
+

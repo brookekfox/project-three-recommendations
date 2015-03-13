@@ -1,4 +1,4 @@
-<div class="container">
+<div class="containerRec">
 	<%#= link_to 'My user page', recommendations_path %>
 	<%= render 'navy' %>
 
@@ -10,7 +10,6 @@
 				<tbody>
 				<% @recommendations.each do |rec| %>
 					<tr>
-						<!--<td><%#= rec.social_media %></td>-->
 						<td>
 							<% if rec.social_media == 'Twitter' %>
 								<%= image_tag('twitter.png') %>

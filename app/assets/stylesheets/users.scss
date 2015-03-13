@@ -9,13 +9,15 @@
 	height: 1000px;
 	width: auto;
 	position: relative;
+	text-align: center;
 }
 
-.newUserContainer #appName {
-	top: 8%;
+#appName2 {
+	color: white;
 	text-align: center;
+	display: block;
 	font-size: 170px;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	// text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 h1.heading {
@@ -36,8 +38,6 @@ h1.heading {
 	width: 500px;
 	margin: 0 auto;	
 	padding-bottom: 10px;
-	top: 9%;
-	position: inherit;
 	opacity: .95;
 }
 
