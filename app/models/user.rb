@@ -26,7 +26,7 @@ class User < ActiveRecord::Base
 	end
 
 	def full_name
-		puts self.first_name.capitalize + ' ' + self.last_name.capitalize
+		self.first_name.capitalize + ' ' + self.last_name.capitalize
 	end
 
 	# has_attached_file :image, styles: { medium: '300x300>', thumb: '100x100>' },
