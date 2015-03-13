@@ -5,15 +5,15 @@
 		
 		<% if @recommendation.social_media == 'Instagram' %>
 			<% query = @recommendation.handle %>
-			<%= image_tag HTTParty.get(@base_url+@search_access_token+query+'&count=1')['data'][0]['profile_picture'] %>
+			<%= image_tag HTTParty.get(@base_url+@search_access_token+@api_key+'&q='+query+'&count=1')['data'][0]['profile_picture'] %>
 		<% elsif @recommendation.social_media == 'Twitter' %>
 			<%= image_tag $twitter.user(@recommendation.handle).profile_image_uri(size=:bigger) %>
 		<% end %>
 
 		<% if @recommendation.social_media == 'Instagram' %>
 			<% query = @recommendation.handle %>
-			<% insta_user_id = HTTParty.get(@base_url+@search_access_token+query+'&count=1')['data'][0]['id'].to_s %>
-			<% most_recent_photo = HTTParty.get(@base_url+insta_user_id+@photo_access_token+'&count=1')['data'][0]['images']['thumbnail']['url'] %>
+			<% insta_user_id = HTTParty.get(@base_url+@search_access_token+@api_key+'&q='+query+'&count=1')['data'][0]['id'].to_s %>
+			<% most_recent_photo = HTTParty.get(@base_url+insta_user_id+@photo_access_token+@api_key+'&count=1')['data'][0]['images']['thumbnail']['url'] %>
 			<%= image_tag most_recent_photo %>
 		<% elsif @recommendation.social_media == 'Twitter' %>
 			<%= $twitter.user_timeline(@recommendation.handle).first.text %>
