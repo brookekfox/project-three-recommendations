@@ -116,6 +116,28 @@ h1,h2,h3 {
 	background: url(image-path('light_wool.png'));
 }
 
+.editContent h1 {
+	margin: 0 auto;
+	margin-bottom: 18px;
+	margin-top: 15px;
+	font-size: 48px;
+	text-transform: uppercase;
+	background: url(image-path('light_wool.png'));
+	width: 75%;
+	border-radius: 10px;
+	box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+
+}
+
+.recSent2 {
+	width: 75%;
+	box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+	border-radius: 10px;
+	margin: 0 auto;
+	margin-top: 18px;
+	background: url(image-path('light_wool.png'));
+}
+
 #tableReceived {
 	width: 100%;
 	border: 2px solid black;
@@ -141,10 +163,13 @@ h1,h2,h3 {
     padding: 4px 5px 4px 5px;
 }
 
-#tableSent td {
-	width: 300px;
-
+#tableSent2 {
+	width: 100%;
 }
 
-
+#tableSent2 th {
+	font-size: 16px;
+    text-align: center;
+    padding: 4px 5px 4px 5px;
+}
 

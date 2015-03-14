@@ -7,18 +7,18 @@
 		<div class="recReceived">
 			<h2>Recommendations Received</h2>
 			<table id="tableReceived">
-				<thead>
-			<tr>
-				<th>FROM<%#= link_to 'FROM', :sort => 'user_id' %></th>
-				<th>SOCIAL MEDIA<%#= link_to 'SOCIAL MEDIA', :sort => 'social_media' %></th>
-				<th>HANDLE<%#= link_to 'HANDLE', :sort => 'handle' %></th>
-				<th>PROFILE PICTURE</th>
-				<th>MOST RECENT UPDATE</th>
-				<th>DATE<%#= link_to 'DATE', :sort => 'created_at' %></th>
-				<th>TAGS</th>
-				<th>ACTIONS</th>
-				<th colspan="8"></th>
-			</tr>
+			<thead>
+				<tr>
+					<th>FROM<%#= link_to 'FROM', :sort => 'user_id' %></th>
+					<th>SOCIAL MEDIA<%#= link_to 'SOCIAL MEDIA', :sort => 'social_media' %></th>
+					<th>HANDLE<%#= link_to 'HANDLE', :sort => 'handle' %></th>
+					<th>PROFILE PICTURE</th>
+					<th>MOST RECENT UPDATE</th>
+					<th>DATE<%#= link_to 'DATE', :sort => 'created_at' %></th>
+					<th>TAGS</th>
+					<th>ACTIONS</th>
+					<th colspan="8"></th>
+				</tr>
 			</thead>
 			<tbody>
 			<% @recommendations.where(is_private:true, user_id_to:session['user_id']).each do |rec| %>

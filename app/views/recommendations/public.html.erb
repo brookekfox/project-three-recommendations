@@ -6,7 +6,18 @@
 		<h1><%= @user.first_name.capitalize %>'s Recommendations!</h1>
 
 		<div class="publicContent">
-			<table id="tableSent">
+			<table id="tableSent2">
+				<thead>
+					<tr>
+						<th>SOCIAL MEDIA<%#= link_to 'SOCIAL MEDIA', :sort => 'social_media' %></th>
+						<th>HANDLE<%#= link_to 'HANDLE', :sort => 'handle' %></th>
+						<th>PROFILE PICTURE</th>
+						<th>MOST RECENT UPDATE</th>
+						<th>TAGS</th>
+						<th>ACTIONS</th>
+						<th colspan="6"></th>
+					</tr>
+				</thead>
 				<tbody>
 				<% @recommendations.each do |rec| %>
 				<tr>
