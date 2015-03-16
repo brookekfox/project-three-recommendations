@@ -167,7 +167,7 @@ h1,h2,h3 {
 }
 
 
-#tableSent th {
+#tableSent th, #tableSent2 th {
 	font-size: 16px;
     text-align: center;
     padding: 4px 5px 4px 5px;
@@ -177,9 +177,16 @@ h1,h2,h3 {
 	width: 100%;
 }
 
-#tableSent2 th {
-	font-size: 16px;
-    text-align: center;
-    padding: 4px 5px 4px 5px;
+// #tableSent2 th {
+// 	font-size: 16px;
+//     text-align: center;
+//     padding: 4px 5px 4px 5px;
+// }
+
+.recTable {
+	position: inline-block;
+	text-align: center;
+	margin: 0 auto;
+	left: 50%;
 }
 
