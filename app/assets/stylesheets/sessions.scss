@@ -24,7 +24,7 @@
 #underTitle {
 	position: inherit;
 	width: 80%;
-	top: 281px;
+	top: 260px;
 	margin: 0 auto;
 	font-family: "Lora", serif;
 	font-style: italic;
@@ -51,26 +51,27 @@ section.content {
 	margin: 0 auto;
 }
 
-input[type=text], [type=password] {	
-	background: transparent;
-	border: none;
-	border-bottom: 2px solid gray;
-	width: 375px;
-	height: 20px;
-	font-size: 20px;
-	font-family: "Lora", serif;
-	color: black;
-	text-align: center;
-}
+// input[type=text], [type=password] {	
+// 	background: transparent;
+// 	line-height: 100%;
+// 	border: none;
+// 	border-bottom: 2px solid gray;
+// 	width: 375px;
+// 	height: 24px;
+// 	font-size: 14px;
+// 	font-family: "Lora", serif;
+// 	color: black;
+// 	text-align: center;
+// }
 
 
-input[type=submit] {
-	background: transparent;
-	font-size: 20px;
-	font-family: "Lora", serif;
-	border: none;
-	color: gray;
-}
+// input[type=submit] {
+// 	background: transparent;
+// 	font-size: 20px;
+// 	font-family: "Lora", serif;
+// 	border: none;
+// 	color: gray;
+// }
 
 input:focus {
 	outline: none;
@@ -89,4 +90,20 @@ a {
 
 a:hover {
 	color: black;
+}
+
+.btn-primary {
+	background-color: #8ECBD6;
+}
+
+.modal-body{
+	line-height: 200%;
+	height: 145px;
+	background: url(image-path('light_wool.png'));
+}
+
+.modal-body2 {
+	height: 300px;
+	line-height: 200%;
+	background: url(image-path('light_wool.png'));
 }

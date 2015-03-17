@@ -1,0 +1,383 @@
+/* line 1, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+h1, h2, h3 {
+  font-family: "Lora", serif;
+}
+
+/* line 5, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.navbar1 {
+  background-color: black;
+  opacity: .8;
+  /*border: 2px solid black;
+  border-radius: 10px;*/
+  padding: 1.5%;
+  color: black;
+  margin: 0 auto;
+  height: 14px;
+  font-size: 16px;
+  font-family: "Lora", serif;
+}
+
+/* line 18, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.navbarLogo {
+  float: left;
+  padding-bottom: 2px;
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+  font-style: normal;
+  text-transform: none;
+}
+
+/* line 28, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.navbarLogo a {
+  color: white;
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+
+/* line 33, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.navBarButton {
+  display: inline;
+  background: transparent;
+  color: white;
+  padding: 0px 5px;
+  border-right: 1px solid white;
+}
+
+/* line 41, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.navBarButton a {
+  color: white;
+}
+
+/* line 44, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.navbarLogo a:hover, .navBarButton a:hover {
+  color: gray;
+}
+
+/* line 47, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.navBarButton.logout {
+  border-right: 0;
+}
+
+/* line 51, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.newRec, .myRec {
+  background-color: white;
+  font-family: "Lora";
+  border-radius: 10px;
+  box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+  margin: 15px auto;
+  width: 80%;
+  padding: 1%;
+  border-radius: 10px;
+  background: url("/assets/light_wool-ceba975d51f4d6c3af5bc816bdf2e857.png");
+  text-align: center;
+}
+
+/* line 64, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.publicContent, .tags-container, .tag {
+  display: inline-block;
+}
+
+/* line 69, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.containerRec {
+  background: url("/assets/bg-2-26294817de590d21ebd1b45d79d67e45.jpg");
+  text-align: center;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: auto;
+  position: relative;
+  opacity: .80;
+}
+
+/* line 79, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.dashboard {
+  margin: 5px auto;
+  width: 90%;
+  padding: 15px;
+}
+
+/* line 87, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.dashboard h1 {
+  margin-bottom: 18px;
+  margin-top: 5px;
+  font-size: 48px;
+  text-transform: uppercase;
+  background: url("/assets/light_wool-ceba975d51f4d6c3af5bc816bdf2e857.png");
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+}
+
+/* line 99, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.recContent h1 {
+  font-size: 60px;
+  color: black;
+  margin-top: 0px;
+}
+
+/* line 105, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.recReceived {
+  box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+  border-radius: 10px;
+  padding: 2%;
+  background: url("/assets/light_wool-ceba975d51f4d6c3af5bc816bdf2e857.png");
+}
+
+/* line 112, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.recReceived2 {
+  width: 50%;
+  box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+  border-radius: 10px;
+  padding: 2%;
+  background: url("/assets/light_wool-ceba975d51f4d6c3af5bc816bdf2e857.png");
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+/* line 122, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.recSent {
+  box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+  border-radius: 10px;
+  margin-top: 18px;
+  padding: 2%;
+  background: url("/assets/light_wool-ceba975d51f4d6c3af5bc816bdf2e857.png");
+}
+
+/* line 130, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.editContent h1 {
+  margin: 0 auto;
+  margin-bottom: 18px;
+  margin-top: 15px;
+  font-size: 48px;
+  text-transform: uppercase;
+  background: url("/assets/light_wool-ceba975d51f4d6c3af5bc816bdf2e857.png");
+  width: 75%;
+  border-radius: 10px;
+  box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+}
+
+/* line 143, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.recSent2 {
+  width: 75%;
+  box-shadow: 0 0 0 8px #eee, 0 0 0 9px #ccc;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 18px;
+  background: url("/assets/light_wool-ceba975d51f4d6c3af5bc816bdf2e857.png");
+}
+
+/* line 152, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+#tableReceived {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/* line 158, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+#tableReceived th {
+  font-size: 16px;
+  text-align: left;
+  padding: 4px 5px 4px 5px;
+}
+
+/* line 164, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+#tableSent {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/* line 171, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+#tableSent th, #tableSent2 th {
+  font-size: 16px;
+  text-align: center;
+  padding: 4px 5px 4px 5px;
+}
+
+/* line 177, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+#tableSent2 {
+  width: 100%;
+}
+
+/* line 187, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/recommendations.scss */
+.recTable {
+  position: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  left: 50%;
+}
+/* line 5, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/sessions.scss */
+.container {
+  text-align: center;
+  background: url("/assets/bg-1-c53f5dc93a4bab0b4ea60b7013978ff8.jpg");
+  opacity: .84;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: auto;
+  position: relative;
+}
+
+/* line 15, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/sessions.scss */
+#appName {
+  position: inherit;
+  top: 32%;
+  margin: 0 auto;
+  font-size: 160px;
+  font-family: "Lora", serif;
+  color: white;
+}
+
+/* line 24, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/sessions.scss */
+#underTitle {
+  position: inherit;
+  width: 80%;
+  top: 260px;
+  margin: 0 auto;
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 19px;
+  color: white;
+}
+
+/* line 35, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/sessions.scss */
+section.content {
+  border-top: 10px solid white;
+  background-color: white;
+  height: auto;
+  width: auto;
+  background-repeat: no-repeat;
+}
+
+/* line 43, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/sessions.scss */
+.sign-in {
+  padding: 15px;
+  background: white;
+  border: 2px solid gray;
+  background-repeat: repeat;
+  width: 1000px;
+  text-align: center;
+  border: 2px solid white;
+  margin: 0 auto;
+}
+
+/* line 76, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/sessions.scss */
+input:focus {
+  outline: none;
+}
+
+/* line 80, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/sessions.scss */
+input:hover {
+  color: black;
+}
+
+/* line 84, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/sessions.scss */
+a {
+  color: gray;
+  text-decoration: none;
+  font-family: "Lora", serif;
+  font-style: italic;
+}
+
+/* line 91, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/sessions.scss */
+a:hover {
+  color: black;
+}
+
+/* line 95, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/sessions.scss */
+button {
+  background-color: #8ECBD6;
+}
+
+/* line 99, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/sessions.scss */
+.modal-body {
+  line-height: 200%;
+  height: 145px;
+  background: url("/assets/light_wool-ceba975d51f4d6c3af5bc816bdf2e857.png");
+}
+
+/* line 105, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/sessions.scss */
+.modal-body2 {
+  height: 300px;
+  line-height: 200%;
+  background: url("/assets/light_wool-ceba975d51f4d6c3af5bc816bdf2e857.png");
+}
+/* line 6, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/users.scss */
+.newUserContainer {
+  background: url("/assets/bg-1-c53f5dc93a4bab0b4ea60b7013978ff8.jpg");
+  opacity: .85;
+  height: 1000px;
+  width: auto;
+  position: relative;
+  text-align: center;
+}
+
+/* line 15, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/users.scss */
+#appName2 {
+  color: white;
+  text-align: center;
+  display: block;
+  font-size: 170px;
+}
+
+/* line 23, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/users.scss */
+h1.heading {
+  text-align: center;
+  font-family: "Lora", serif;
+  padding: 5px 15px 0 15px;
+}
+
+/* line 29, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/users.scss */
+#error-explanation {
+  text-align: center;
+  color: red;
+  padding-bottom: 50px;
+}
+
+/* line 35, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/users.scss */
+.newUserContent {
+  background: url("/assets/light_wool-ceba975d51f4d6c3af5bc816bdf2e857.png");
+  border: 4px double black;
+  border-radius: 10px;
+  width: 500px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  opacity: .95;
+}
+
+/* line 49, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/users.scss */
+.newUserForm {
+  line-height: 2;
+  text-align: center;
+}
+
+/* line 54, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/users.scss */
+#newSessionPath {
+  font-size: 12px;
+  text-align: center;
+}
+
+/* line 59, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/users.scss */
+.editForm {
+  line-height: 200%;
+  text-align: right;
+  margin-right: 44%;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+/* line 18, /Users/MRCRZ/wdi/Projects/Project3/project-three-recommendations/app/assets/stylesheets/application.css.scss */
+body {
+  font-family: "Lora", serif;
+}
